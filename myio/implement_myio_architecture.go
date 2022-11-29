@@ -65,8 +65,8 @@ func addBookUseCase(db dbInterface, name, author string) {
 
 // 3. Handlers
 func AddBookHandler(w http.ResponseWriter, _ *http.Request) {
-	bookName := "A man of the people"
-	author := "Chinua Achebe"
+	bookName := "Africa Kills Her Sun"
+	author := "Ken Saro Wiwa"
 
 	db := database{path: "/tmp/clean_architecture_db.txt"}
 

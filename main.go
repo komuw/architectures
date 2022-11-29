@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"architectures/clean"
-	"architectures/myio"
+	"github.com.komuw/architectures/clean"
+	"github.com.komuw/architectures/myio"
 )
 
 func run() error {
@@ -18,6 +18,10 @@ func run() error {
 	return err
 }
 
+/*
+curl -vkL localhost:8080/clean
+curl -vkL localhost:8080/myio
+*/
 func main() {
 	err := run()
 	if err != nil {

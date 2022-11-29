@@ -1,0 +1,22 @@
+.vscode/*
+debug
+debug.test
+coverage.txt
+coverage.html
+coverage.out
+.DS_Store
+
+# go-pry debug stuff
+.main.gopry
+
+# goreleaser distribution folder.
+/dist/
+
+# binary
+architectures
+
+# debug stuff
+debug.test
+architectures.test
+architectures.prof
+architectures.prof
