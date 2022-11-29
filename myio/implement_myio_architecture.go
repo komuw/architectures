@@ -45,11 +45,6 @@ func (d database) get(bookName string) Book {
 }
 
 // 2. Use Cases
-type dbInterface interface {
-	save(content string)
-	get(bookName string) Book
-}
-
 type Book struct {
 	name   string
 	author string
@@ -57,6 +52,11 @@ type Book struct {
 
 func newBook(name, author string) Book { return Book{name: name, author: author} }
 func (b Book) String() string          { return fmt.Sprintf("Book{n: %s, a: %s}", b.name, b.author) }
+
+type dbInterface interface {
+	save(content string)
+	get(bookName string) Book
+}
 
 func addBookUseCase(db dbInterface, name, author string) {
 	b := newBook(name, author)
