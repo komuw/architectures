@@ -25,9 +25,15 @@ Note: these interfaces are declared on the consumer side as opposed to producer 
 
 (c) Handlers
 These are one line and call into (b)
+
+Questions:
+  1. Why have handlers & io? Aren't handlers just io?
+  2. Wouldn't be better to just use the clean architecture with a minor change?
+     Where we collapse the useCases & interfaces layers into one, so that interfaces are defined in the consumer?
 */
 
 // NOTE: In actual use, the three different components might/would be go packages each.
+
 
 // 1. IO
 type database struct {
